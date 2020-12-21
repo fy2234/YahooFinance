@@ -2,7 +2,7 @@
 Streaming Finance Data with AWS Lambda
 # Streaming Finance Data with AWS Lambda
 
-In this project, I provision a Lambda function to generate near real time finance data record for interactive querying. 
+In this project, I provision a Lambda function to retrieve finance data record for interactive querying. If you want to generate near real time data, a CloudWatch trigger can be added to run the code every few minutes. 
 
 I collect one full day’s worth of stock HIGH and LOW prices for 10 companies on Tuesday, December 1st 2020, at a five minute interval. Here I choose to use the `history` function in the yfinance module and get a previous day’s data. I generate kinesis stream to hold the data. 
 
